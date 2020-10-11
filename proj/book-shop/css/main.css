@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+}
+
+
+header {
+  background-color: #4CAF50;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 2em;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.modal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: lightgray;
+  padding: 10px;
+  width: 30%;
+  
+}
+
+.addBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.createBook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.createBook > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.createBook > h3 {
+  font-size: 1.3rem;
+}
+
+.createBook > div > span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.hide { 
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bookImage {
+  max-width: 30vw;
+  max-height: 40vh;
+}
+
+.noBooks {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.nameHeader, .priceHeader {
+  cursor: pointer;
+}
+
+.bookName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bookDetails {
+  font-weight: bold;
+  text-align: start;
+}

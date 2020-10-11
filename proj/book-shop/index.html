@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>book-shop</title>
+</head>
+
+<body onload="init()">
+
+  <section class="main-section">
+    <header>
+      <h1>Welcome to the Bookshoop</h1>
+    </header>
+
+    <div class="addBook ">
+      <button class="addNewBookBtn" onclick="onBookAdd()">Add new book</button>
+      <div class="createBook hide">
+        <h3>Add Book</h3>
+        <div class="addName">
+          <span>Name:</span>
+          <input class="name" type="text" placeholder="Enter name">
+        </div>
+        <div class="addPrice">
+          <span>Price:</span>
+          <input class="price" type="text" placeholder="Enter price">
+        </div>
+        <!-- <div class="addImage">
+          <span>Image:</span>
+          <input class="image" type="file" accept="image/*" >
+        </div> -->
+        <div class="addDetails">
+          <span>Details:</span>
+          <textarea class="details" cols="30" rows="5"></textarea>
+        </div>
+        <button onclick="onBookSave()">Save book!</button>
+      </div>
+    </div>
+    <div class="table"></div>
+    <h3 class="noBooks hide">No Books to display. <br> ^^Add new book^^</h3>
+  </section>
+
+  <section class="modal-section hide">
+    <h2 class="bookName"></h2>
+    <img class="bookImage" src="">
+    <p class="bookDetails"></p>
+    <button onclick="onCloseModal()">Close</button>
+  </section>
+
+  <script src="js/initialBooks.js"></script>
+  <script src="js/storage-service.js"></script>
+  <script src="js/util-service.js"></script>
+  <script src="js/book-service.js"></script>
+  <script src="js/book-controller.js"></script>
+</body>
+
+</html>
+

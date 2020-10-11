@@ -1,0 +1,40 @@
+.img-fluid {
+  padding-right:10px;
+}
+
+.table-striped {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.page-item {
+  cursor: pointer;
+}
+
+.profileLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.box {
+  text-align: center;
+  border: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.actionButtons > * {
+  margin-right: 20px;
+}
+
+.watchListBtn {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.hide {
+  display: none;
+}

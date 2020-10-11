@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  font-family: 'Indie Flower', cursive;
+  background: #999492;
+  background: linear-gradient(to right, #CE5937 0%, #1C6EA4 100%, #C59237 100%);
+  color: white;
+  border-bottom: 5px double white;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 8px black;
+  transition: 0.5s;
+  justify-content: center;
+}
+
+table {  
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: 0.3s ;
+}
+
+tr {
+  margin: 1px;
+  padding: 5px;
+}
+
+.hide {
+  background-color: dimgrey;
+
+}
+
+.timer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px 20px ;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.smiley img {
+  max-width: 150px;
+  max-height: 75px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.emojis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+
+span{  
+  display: block;
+  font-size: x-large;
+  margin: 0 10px;
+}
+
+
+.heart {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 2px 10px ;
+  font-size: xx-large;
+  height: 10px;
+}
+
+
+button {
+  font-family: 'Indie Flower', cursive;
+  padding: 15px 25px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #1C6EA4}
+
+button:active {
+  background-color: #1C6EA4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.safeClickBtn {
+  position: absolute;
+  left: 0;
+  margin: 10px 15px;
+  font-size: 20px;
+  width: 12vw;
+}
+
+.hints {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50px;
+  top: 170px;
+}
+
+
+.hints img {
+  padding: 0;
+  max-width: 250px;
+  max-height: 100px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  
+}
+
+
+.hints img:hover {
+  content: url('/images/Lightbulb-On.png');
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  font-family: 'Indie Flower', cursive;
+  background: #CE5937;
+  background: linear-gradient(to right, #CE5937 0%, #1C6EA4 100%, #C59237 100%);
+  color: white;
+  box-shadow: 4px 4px 8px black;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  }
+
+
+.winElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winElement h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+
+.imgLose {
+  display: none;
+}
+
+
+.imgWin {
+  display: none;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  justify-content: center;
+}
+
+.levels button {
+  margin: 10px 10px;
+}
+
+.show-safe-click {
+  background-color: green;
+}
+
