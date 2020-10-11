@@ -42,7 +42,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
     section {
-        padding: 150px 0;
+        padding: 75px 0;
     }
 }
 ::-moz-selection {
@@ -84,7 +84,8 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: cadetblue;
+    color: #fed136;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -104,6 +105,11 @@ body {
     height: 20%;
 }
 
+.offcanvas-aside form {
+    
+    width: 70vh;
+}
+
 @media (min-width: 575px) {
     .offcanvas-btn-open {
         margin-right: 30vw;
@@ -112,10 +118,12 @@ body {
         width: 30vw;
         right: -30vw;
     }
+    .offcanvas-aside form {
+        width: 30vh;
+    }
 }
 .offcanvas-aside-open {
     right: 0;
-    
 }
 
 #mainNav {
@@ -198,6 +206,7 @@ header.masthead {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
 }
 header.masthead .intro-text {
     padding-top: 150px;
