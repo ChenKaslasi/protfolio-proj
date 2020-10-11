@@ -67,7 +67,6 @@ function renderModals() {
                 <ul class="list-inline">
                   <li>Date: ${project.publishedAt}</li>
                   <li>${project.title}</li>
-                  
                 </ul>
                 <a href="${project.url}" class="badge badge-warning projectLink">Go to project</a>
               </div>
