@@ -50,24 +50,24 @@ function renderModals() {
   projects.forEach((project,index) => {
     htmlStr = '';
     htmlStr += `
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
       <div class="modal-content p-2 h-100">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 ">
               <div class="modal-body ">
                 <!-- Project Details Go Here -->
-                <button class="btn btn-primary bg-dark" data-dismiss="modal" type="button">
+                <button class="btn btn-primary bg-dark mb-3" data-dismiss="modal" type="button">
                     <i class="fa fa-times "></i>
                     Close</button>
                 <h2 class="mt-2">${project.name}</h2>
-                <p class="item-intro text-muted mb-2">${project.title}</p>
+                <p class="item-intro ">${project.title}</p>
                 <img class="img-fluid d-block mx-auto modalImg" src="${project.img}" alt="">
-                <p>${project.desc}</p>
+                <p class="modal-description">${project.desc}</p>
                 <ul class="list-inline">
                   <li>Date: ${project.publishedAt}</li>
                   <li>${project.title}</li>
-                  <li>${project.labels}</li>
+                  
                 </ul>
                 <a href="${project.url}" class="badge badge-warning projectLink">Go to project</a>
               </div>
@@ -77,6 +77,7 @@ function renderModals() {
       </div>
     </div>
   `
+  // <li>${project.labels}</li>
   document.querySelector(`#portfolioModal${index+1}`).innerHTML = htmlStr
   })
   
